@@ -10,7 +10,7 @@ async function saveProject() {
   description: ${description}
   ---`;
 
-  const response = await fetch(`https://api.github.com/repos/Hassan-Elhdiny/Nexus-Site/YOUR_REPO/contents/${filePath}`, {
+  const response = await fetch(`https://api.github.com/repos/Hassan-Elhdiny/Nexus-Site/contents/${filePath}`, {
     method: 'PUT',
     headers: {
       'Authorization': `token ${token}`,
