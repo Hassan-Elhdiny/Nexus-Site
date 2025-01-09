@@ -1,4 +1,7 @@
 backend:
   name: github
-  repo: Hassan-Elhdiny/Nexus-Site # اسم المستودع الخاص بك
-  branch: main # اسم الفرع الرئيسي
+  repo: Hassan-Elhdiny/Nexus-Site
+  branch: main
+  auth:
+    client_id: Ov23liwWFX4WEkgjWXYr # ضع Client ID هنا
+    scope: repo
