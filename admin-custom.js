@@ -2,7 +2,7 @@ async function saveProject() {
   const title = document.getElementById('project-title').value;
   const description = document.getElementById('project-description').value;
 
-  const token = 'YOUR_PERSONAL_ACCESS_TOKEN'; // ضع توكن GitHub هنا
+  const token = 'Ov23liwWFX4WEkgjWXYr'; // ضع توكن GitHub هنا
   const filePath = '_projects/' + title.replace(/\s+/g, '-').toLowerCase() + '.md';
 
   const data = `---
@@ -10,7 +10,7 @@ async function saveProject() {
   description: ${description}
   ---`;
 
-  const response = await fetch(`https://api.github.com/repos/YOUR_USERNAME/YOUR_REPO/contents/${filePath}`, {
+  const response = await fetch(`https://api.github.com/repos/Hassan-Elhdiny/Nexus-Site/YOUR_REPO/contents/${filePath}`, {
     method: 'PUT',
     headers: {
       'Authorization': `token ${token}`,
