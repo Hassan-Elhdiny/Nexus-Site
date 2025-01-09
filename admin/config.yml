@@ -8,7 +8,6 @@ collections:
     label: "Projects"
     folder: "_projects"
     create: true
-    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
